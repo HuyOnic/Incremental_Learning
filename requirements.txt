@@ -1,0 +1,7 @@
+torch
+torchvision 
+tdqm
+numpy
+scipy
+quadprog
+POT

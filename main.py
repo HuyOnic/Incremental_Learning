@@ -3,9 +3,22 @@ import argparse
 from trainer import train
 
 
+
 def main():
     args = setup_parser().parse_args()
     args.config = f"./exps/{args.model_name}.json"
+    # "prefix": "reproduce",
+    # "dataset": "cifar100",
+    # "memory_size": 2000,
+    # "memory_per_class": 20,
+    # "fixed_memory": false,
+    # "shuffle": true,
+    # "init_cls": 10,
+    # "increment": 10,
+    # "model_name": "finetune",
+    # "convnet_type": "resnet32",
+    # "device": ["0","1","2","3"],
+    # "seed": [1993]
     param = load_json(args.config)
     args = vars(args)  # Converting argparse Namespace to a dict.
     param.update(args)

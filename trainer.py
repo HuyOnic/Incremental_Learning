@@ -88,6 +88,7 @@ def _train(args):
         args["init_cls"],
         args["increment"],
     )
+    # GET MODEL
     model = factory.get_model(args["model_name"], args)
 
     cnn_curve, nme_curve, no_nme = {"top1": [], "top5": []}, {"top1": [], "top5": []}, True

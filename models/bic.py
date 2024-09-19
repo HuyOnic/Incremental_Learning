@@ -9,7 +9,7 @@ from models.base import BaseLearner
 from utils.inc_net import IncrementalNetWithBias
 
 
-epochs = 170
+epochs = 100
 lrate = 0.1
 milestones = [60, 100, 140]
 lrate_decay = 0.1
